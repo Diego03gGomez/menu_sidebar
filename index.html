@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practica sidebar</title>
+
+
+
+
+
+
+
+
     <link rel="stylesheet" href="styles.css">
 
 
@@ -19,6 +27,44 @@
     <!-----
     <div class="fondo_oculto">
 ---->
+<header>
+<div class="cont_header">
+
+    <h2>   <a  class="menu" ><i class="fa-solid fa-bars "></i></a>   Tu Musica</h2>
+    
+    
+    <div class="cont_input">
+        <input type="text" placeholder="Buscar">
+        <a class="lupa"  href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+
+    <nav>
+    <a href="">Explore</a>
+    <a href="">Signin</a>
+    <a href=""><i class="fa-solid fa-user"></i> Signup</a>
+    </nav>
+</div>
+
+
+
+
+</header>
+
+
+<div class="fondo_cargando">
+
+    <div class="div_cargando">
+        <h1>CARGANDO <i class="fa-solid fa-headphones"></i> . . .</h1>
+
+    </div>
+
+
+
+
+</div>
+
+
+
         <div class="menu_oculto1  ">
             <a class="equis"><i class="fa-solid fa-xmark"></i></a>
             <a href=""><i class="fa-solid fa-house"></i> <h3>Inicio</h3></a>
@@ -51,20 +97,28 @@
 
 
 
-<aside>
+<aside  >
 <div class="titulo_aside">
-    <a  class="menu" ><i class="fa-solid fa-bars "></i></a>
+ 
+
+</div>
+
+<div class="links_aside">
+   <a href=""><p>Browse</p></a>
+    <a href=""><i class="fa-solid fa-house"></i><p>Home</p></a>
+    <a href=""><i class="fa-solid fa-magnifying-glass"></i><p>Search</p></a>
+    <a href=""><i class="fa-solid fa-heart"></i><p>Liked</p></a>
+    <a href=""><i class="fa-solid fa-user"></i><p>Perfil</p></a>
+    <a href=""><i class="fa-solid fa-compass"></i><p>Direction</p></a>
 
 </div>
 <div class="links_aside">
-    <a href=""><i class="fa-solid fa-house"></i> <h3>Inicio</h3></a>
-    <a href=""><i class="fa-solid fa-magnifying-glass"></i><h3>Buscar</h3></a>
-    <a href=""><i class="fa-solid fa-heart"></i><h3>Notificaciones</h3></a>
-    <a href=""><i class="fa-solid fa-user"></i><h3>Perfil</h3></a>
-    <a href=""><i class="fa-solid fa-compass"></i><h3>Explorar</h3></a>
+    <a href=""><p>Library</p></a>
+    <a href=""><i class="fa-solid fa-headphones"></i><p>Stream</p></a>
+    <a href=""><i class="fa-solid fa-play"></i><p>PlayList</p></a>
+
 
 </div>
-
 
 
 
@@ -109,9 +163,130 @@
 
 
 
+
+
+<div id="fondo_albunes">
+<div class="titulo_album">
+    <h2>Featured</h2>
+</div>
+
+
+<div class="cont_albunes">
+
+<div class="card_album">
+    <div class="hover_album">
+<div class="cont_hover">
+
+
+    <div class="des1">
+        <h4>Blue Radio UK</h4>
+    <p>Artist Name <i class="fa-solid fa-check"></i></p>
+    </div>
+    <div class="des2">
+        <a href=""><i class="fa-solid fa-play"></i></a>
+    </div>
+</div>
+
+    </div>
+    <img src="/imagenes/album1.png" alt="">
+</div>
+<div class="card_album">
+    <div class="hover_album">
+        <div class="cont_hover">
+        
+        
+            <div class="des1">
+                <h4>Blue Radio UK</h4>
+            <p>Artist Name <i class="fa-solid fa-check"></i></p>
+            </div>
+            <div class="des2">
+                <a href=""><i class="fa-solid fa-play"></i></a>
+            </div>
+        </div>
+        
+            </div>
+    <img src="/imagenes/album2.png" alt="">
+</div>
+<div class="card_album">
+    <div class="hover_album">
+        <div class="cont_hover">
+        
+        
+            <div class="des1">
+                <h4>Blue Radio UK</h4>
+            <p>Artist Name <i class="fa-solid fa-check"></i></p>
+            </div>
+            <div class="des2">
+                <a href=""><i class="fa-solid fa-play"></i></a>
+            </div>
+        </div>
+        
+            </div>
+    <img src="/imagenes/album3.png" alt="">
+</div>
+<div class="card_album">
+    <div class="hover_album">
+        <div class="cont_hover">
+        
+        
+            <div class="des1">
+                <h4>Blue Radio UK</h4>
+            <p>Artist Name <i class="fa-solid fa-check"></i></p>
+            </div>
+            <div class="des2">
+                <a href=""><i class="fa-solid fa-play"></i></a>
+            </div>
+        </div>
+        
+            </div>
+    <img src="/imagenes/album4.png" alt="">
+</div>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <div id="fondo_playlist">
 <div class="titulo_playlist">
-    <h2>Playlist de Tumusica</h2>
+    <h2>Recommended for you</h2>
 
     <a href="">Mostrar mas</a>
 </div>
@@ -122,7 +297,7 @@
         <img src="/imagenes/im1.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -132,7 +307,7 @@
         <img src="/imagenes/img2.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -143,7 +318,7 @@
         <img src="/imagenes/img3.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -155,7 +330,7 @@
         <img src="/imagenes/img4.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -168,7 +343,7 @@
         <img src="/imagenes/img5.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -181,7 +356,7 @@
         <img src="/imagenes/img6.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -207,7 +382,7 @@
         <img src="/imagenes/img7.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -221,7 +396,7 @@
         <img src="/imagenes/img8.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -232,7 +407,7 @@
         <img src="/imagenes/img9.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -246,7 +421,7 @@
         <img src="/imagenes/img10.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -258,7 +433,7 @@
         <img src="/imagenes/img11.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -271,7 +446,7 @@
         <img src="/imagenes/img12.jpg" alt="">
     </div>
     <div class="des_card">
-        <h3>Today Top Hits</h3>
+        <h4>Today Top Hits</h4>
         <p>Favourite song is on top of the Music 50!</p>
     </div>
 </div>
@@ -347,6 +522,8 @@
 </div>
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
- <script src="main.js"></script>   
+
+
+<script src="main.js"></script>   
 </body>
 </html>

@@ -12,16 +12,21 @@ body{
 
 
 
+
 .contenedor_pagina{
     display: flex;
+    margin-top: 100px;
 }
 
 aside{
     transition: all 0.30s;
   background-color: rgb(45 0 0);
 
+  background-color: #010305;
     position: fixed;
-    width: 350px;
+  
+    width: 250px;
+    width: 190px;
    
     height: 100%;
     border-color: black;
@@ -30,13 +35,23 @@ aside{
     border-bottom: none;
     border-left: none;
     border-width: 1px;
+    margin-top: 30px;
+    margin-top: -68px;
+ 
 }
+
+aside .links_aside a {
+    color:#ff5500;
+}
+
+
 
 .contenido{
     transition: all 0.30s;
    /* background-color: darkblue;*/
     flex-grow: 1;
     margin-left: 350px;
+    margin-left: 250px;
 }
 
 .menu{
@@ -61,24 +76,36 @@ aside{
   /*  background-color: black;*/
     margin: auto;
     margin-top: 20px;
+    margin-top: 50px;
     width: 90%;
     display: flex;
     flex-direction: column;
-    gap: 70px;
-  
+    gap: 0px;
 }
+
+
+
+
+
+
+
 
 .links_aside a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     display: flex;
     align-items: center;
     justify-content: center;
- 
+ opacity: 1;
     gap: 20px;
     padding: 5px 0;
+    color: #ff5500;
 }
+.links_aside p{
+    color: white;
+}
+
 
 
 .links_aside a h3{
@@ -87,17 +114,22 @@ aside{
 
 
 
+
+
 /*ESTILOS DE ANIMACINO*/
 .trasladar_aside{
     transition: all 0.30s;
     width: 350px;
     width: 150px;
+    width: 2px;
+    opacity: 0;
 }
 
 .empujar_contenido{
     transition: all 0.30s;
     margin-left:350px ;
     margin-left: 150px;
+    margin-left: 2px;
 }
 
 .desaparecer_links{
@@ -153,6 +185,9 @@ font-family: 'Rubik', sans-serif;
 
 
 
+
+
+
 #fondo_contenido{
   /*  background-color:#001d47;*/
     color: white;
@@ -175,6 +210,7 @@ font-family: 'Rubik', sans-serif;
     align-items: center;
     justify-content: space-between;
     font-family: 'Rubik', sans-serif;
+    margin-top: 100px;
 }
 
 .titulo_playlist a{
@@ -205,9 +241,14 @@ gap: 20px;
 
 .card{
     background-color: #150000;
+    background-color: #3a3c3e7a;
     color: white;
     padding: 10px;
     border-radius: 10px;
+}
+
+.card h4{
+    margin-bottom: -9px
 }
 
 
@@ -277,6 +318,7 @@ background-size: cover;
 display: flex;
 align-items: center;
 border-radius: 10px;
+display: none;
 }
 
 
@@ -348,7 +390,7 @@ font-size: 20px;
   
   /* Color de la barra de desplazamiento */
   ::-webkit-scrollbar-thumb { 
-    background-color:#a10000;
+    background-color:#ff5500;
     border-radius: 2em;
   }
   
@@ -371,7 +413,7 @@ font-size: 20px;
     height: 100%;
    padding-left: 50px;
    padding-top: 100px; 
-
+z-index: 990;
    padding: 100px 0px;
 }
 
@@ -389,6 +431,7 @@ font-size: 20px;
     gap: 10px;
     text-decoration: none;
     color: white;
+
 }
 
 .equis{
@@ -401,6 +444,193 @@ font-size: 20px;
     display: none;
     cursor: pointer;
 }
+
+.titulo_contenido{
+    display: none;
+}
+
+/*ESTILOS PARA EL HEADER*/
+header{
+    background-color: #010305;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 990;
+ margin-bottom: 1000px;
+}
+
+
+
+
+.cont_header{
+    margin: auto;
+    width: 94%;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+
+    padding: 30px 0;
+}
+
+
+.cont_input{
+    background-color: black;
+    border-radius: 2em;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+
+border-radius: 2em;
+}
+
+.cont_input input{
+    width: 100%;
+    border-radius: 2em;
+    background-color: #3a3c3e;
+    padding: 10px 20px;
+    caret-color: white; 
+    border-color: #3a3c3e;
+    border-style: solid;
+    color: white;
+}
+
+.cont_input input::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+.cont_input input:focus{
+    outline: none;
+}
+
+
+.lupa{
+    position: absolute;
+    right: 10px;
+    color: white;
+}
+
+
+.cont_header nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.cont_header nav a:last-child{
+    background-color: #ff5500;
+    border-radius: 2em;
+    padding: 5px 20px;
+}
+
+body{
+    background-color: #010305;
+}
+
+
+.cont_header nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.cont_albunes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+
+    width: 90%;
+    gap: 20px;
+}
+
+.card_album{
+    text-align: center;
+}
+
+.card_album img{
+    width: 90%;
+}
+
+
+.titulo_album{
+
+    color: white;
+
+ margin: auto;
+ margin-top: 39px;
+ width: 90%;
+}
+
+/*ESTILOS PARA LOS HOVERS DE LAS ALBUM CARDS*/
+.card_album{
+    position: relative;
+    
+}
+
+.hover_album{
+    cursor: pointer;
+  background-color: rgb(0 0 0 / 53%);;
+    position: absolute;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+justify-content: flex-end;
+
+
+}
+.cont_hover{
+ /*background-color: #0000003b;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+   
+    
+}
+.des1 h4{
+    color: white;
+}
+
+
+.des1 p{
+    color: grey;
+}
+
+
+.des2 a{
+    background-color: white;
+    color: black;
+    border-radius: 2em;
+    padding: 5px 10px;
+ 
+}
+
+
+
+.fondo_cargando{
+    background-color: black;
+    background-image: url();
+   background-size: cover;
+   background-position: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ff5500;
+}
+
+
 
 
 
@@ -489,8 +719,11 @@ font-size: 20px;
 
 @media (max-width: 1100px){
     .cont_playlist{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
+
+
+    
 }
 
 
@@ -508,7 +741,7 @@ font-size: 20px;
 
 @media (max-width: 980px){
     .cont_playlist{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 
     aside{
@@ -527,6 +760,32 @@ font-size: 20px;
 
 #fondo1{
     width: 100%;
+}
+
+.titulo_contenido{
+    display: flex;
+}
+
+.menu2{
+    display: initial;
+}
+
+header{
+    display: none;
+}
+
+
+.registro{
+    display: none;
+}
+
+
+.cont_albunes{
+    grid-template-columns: 1fr 1fr ;
+}
+
+.contenedor_pagina{
+    margin-top: 0px;
 }
 
 }
@@ -606,6 +865,10 @@ margin: 60px 0;
     }
 
 
+    .cont_albunes{
+        grid-template-columns: 1fr 1fr;
+    }
+
 }
 
 
@@ -650,6 +913,10 @@ margin: 60px 0;
 .trasladar_menu2{
     padding-left: 30px;
     width: 80%;
+}
+
+.cont_albunes{
+    grid-template-columns: 1fr;
 }
 
 
