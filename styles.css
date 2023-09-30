@@ -11,6 +11,145 @@ body{
 }
 
 
+.fondo_input{
+    background-color: #000000ba;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;  
+}
+
+.cont_input2{
+    background-color: #a52a2a00;
+    display: flex;
+    align-items: center;
+}
+
+.cont_input2 input{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 30px;
+    background-color: rgba(255, 0, 0, 0);
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    border-color: white;
+    color: white;
+}
+
+.cont_input2 input:focus{
+    outline: none;
+}
+
+.cerrar{
+    color: white;
+    font-size: 25px;
+}
+
+
+
+
+
+.titulo_cont_music{
+   /* background-color: red;*/
+    margin: auto;
+    width: 90%;
+    color: white;
+    margin-top: 100px;
+}
+
+
+
+.cont_musica{
+   /* background-color: rgb(124, 8, 8);*/
+    margin: auto;
+    width: 90%;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    background-color: #858585;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+.cont_header{
+    position: relative;
+}
+
+.img_music{
+    text-align: center;
+}
+
+.img_music img{
+    width: 85%;
+    border-radius: 6em;
+}
+
+
+
+.card_musica{
+    color: white;
+    background-color: #101316;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link_card{
+    color: #ff5500;
+    text-decoration: none;
+    border-color: #ff5500;
+    border-style: solid;
+    border-radius: 2em;
+    padding: 2px 10px;
+border-width: 1px;
+}
+
+
+.cont_musica a{
+    padding: 0 20px;
+    color: white;
+    background-color: black;
+    display: flex;
+    gap: 10px;
+    background-color: #242424;  
+    text-decoration: none;
+}
+
+.cont_musica{
+    gap: 1px;
+}
+
+.cont_musica a:hover{
+    background-color: #535353;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .contenedor_pagina{
@@ -237,15 +376,44 @@ gap: 20px;
 
 .img_card img{
     width: 100%;
+    height: 100%;
 }
 
 .card{
+    transition: all 0.20s;
     background-color: #150000;
     background-color: #3a3c3e7a;
     color: white;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
+.card:hover{
+    transition: all 0.20s;
+    background-color: #8f8f8f7a;
+}
+
+.img_card{
+    position: relative;
+}
+
+.hover_card{
+    background-color: rgba(20, 19, 19, 0.6);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.hover_card i{
+    font-size: 50px;
+}
+
+
 
 .card h4{
     margin-bottom: -9px
@@ -615,7 +783,7 @@ justify-content: flex-end;
 
 .fondo_cargando{
     background-color: black;
-    background-image: url();
+  /*  background-image: url(https://1.bp.blogspot.com/-q12PzLWSVYo/Xjl1YhuzYHI/AAAAAAAIG8I/YcGTtJid0qEG4oS2G0JB-MNmuDU69nrKACLcBGAsYHQ/s1600/d8acc33a-5517-4111-8df6-222adc9cb3e4.gif);*/
    background-size: cover;
    background-position: center;
     position: fixed;
@@ -702,6 +870,15 @@ justify-content: flex-end;
     .cont_playlist{
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
+
+.links_aside a{
+    font-size: 13px;
+}
+
+.links_aside{
+    margin-top: 17px;
+}
+
 }
 
 
@@ -793,6 +970,45 @@ header{
     margin-top: 19px;
 }
 
+.fondo_input_oculto{
+    background-color: #00000070;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 995;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont_input2{
+    width: 77%;
+}
+
+.cont_input2 input{
+    width: 100%;
+    font-size: 29px;
+    padding: 3px 12px;
+    background-color: #ffffff00;
+    border-color: white;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+}
+
+.cont_input2 input :focus{
+    outline: none;
+    border-top: none;
+}
+
+.cont_input2 input::placeholder{
+   
+}
+
+
+
 }
 
 
@@ -874,6 +1090,12 @@ margin: 60px 0;
         grid-template-columns: 1fr 1fr;
     }
 
+
+.cont_musica{
+    grid-template-columns: 1fr 1fr;
+}
+
+
 }
 
 
@@ -922,6 +1144,12 @@ margin: 60px 0;
 
 .cont_albunes{
     grid-template-columns: 1fr;
+}
+
+
+.cont_musica{
+    grid-template-columns: 1fr;
+    
 }
 
 
